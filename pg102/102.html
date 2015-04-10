@@ -1,0 +1,65 @@
+<html>
+<head>
+  <style type="text/css">
+	ol {list-style-type:upper-roman;}
+	ol.r {list-style-type:lower-roman;}
+	ol.U {list-style-type:upper-alpha;}
+	ol.l {list-style-type:lower-alpha;}
+	ol.n {list-style-type:decimal;}
+  </style>
+</head>
+<body>
+Administering PostgreSQL 102
+<ol>
+  <li>Vaccuum
+  <ol class="U">
+    <li>Leave it alone
+    <li>Vacuum often
+    <li>Leave it alone
+    <li>Vacuum full rarely
+    <li>Leave it alone
+  </ol>
+  <li>WAL / Replication / Log shipping
+  <ol class="U">
+    <li>Cascading vs Streaming
+    <li>Hot vs Warm Standby
+    <li>Synchronous vs Asynchronous
+    <li>Replication Privilege
+    <li>postgresql.conf changes
+    <!-- rsync vs pg_standby -->
+    <li>Failover
+    <ol class="n">
+      <li>recovery.conf
+    </ol>
+  </ol>
+  <li>Conveniences
+  <ol class="U">
+    <li>.pgpass
+    <li>pgAdmin
+    <li>Software Catalog
+  </ol>
+  <li>Backups
+  <ol class="U">
+    <li>Dump
+    <li>Data File Copy / Filesystem Snapshots
+  </ol>
+  <li>Upgrades
+  <ol class="U">
+    <li>Dump/Restore
+    <li>pg_upgrade
+    <ol class="n">
+      <li> Copy vs Overwrite
+    <li>No Replication
+    </ol>
+  </ol>
+  <li>HA
+  <ol class="U">
+    <li>pgpool-II
+    <li>pgbouncer / HA-Proxy
+    <li>slony-II
+    <li>pacemaker (drbd)
+    <li>pgHA 
+  <ol>
+</ol>
+</body>
+</html>
